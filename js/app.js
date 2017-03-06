@@ -19,7 +19,7 @@ app.config(function($routeProvider){
 	})
 
 	.when('/developer', {
-		controller: 'DevelperController',
+		controller: 'DeveloperController',
 		templateUrl: 'views/developer.html',
 	})
 

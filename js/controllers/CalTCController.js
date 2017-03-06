@@ -68,5 +68,7 @@ app.controller('CalTCController', ['$scope', function($scope){
 		$scope.grade=["10","10","10","10","10","10","10","10","10","10","10"];
 		$(".btn-cal").show();
 		$(".pro-bar").hide();
+		$(".progress-bar").css("width","0%");
+		$(".progress-bar").text("");
 	}
 }]);

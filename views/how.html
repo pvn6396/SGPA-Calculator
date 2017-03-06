@@ -1,0 +1,96 @@
+<div class="panel panel-success">
+	<div class="panel-heading text-center"><big>How SGPA is Calculated ? </big></div>
+
+	<div class="panel-body text-left">
+		The Semester Grade Point Average (SGPA) and Cumulative Grade Point Average (CGPA) is calculated as weighted average  of valid and virtual credit points secured by the students.
+		<br />
+		<!--A Credit point is assigned to each and every subject and varies according to subject. Each Subject has a different Credit weightage like Mechanical Theory has weightage of 4 credits whereas Humanities has weightage of 1 credits.-->
+		<br />
+		A SGPA is a measure of performance of the student in a semester. It is the ration of total credit points secured by student in various courses registered in a semester and the total course credits taken during semester.
+		<br />
+		<br />
+		For calculation of SGPA, Grades are converted to their Grade Points according to this table.
+		<br /><br />
+
+		<div class="table-responsive text-center">
+			<table class="table  table-bordered table-hover">
+				<tr>
+					<th>Letter Grade</th>
+					<th>Grade Points</th>
+					<th>Description</th>
+					<th>Range of Marks (%)</th>
+				</tr>
+				<tr>
+					<td>O</td>
+					<td>10</td>
+					<td>Excellent</td>
+					<td>90-100</td>
+				</tr>
+				<tr>
+					<td>A+</td>
+					<td>9</td>
+					<td>Excellent</td>
+					<td>80-89</td>
+				</tr>
+				<tr>
+					<td>A</td>
+					<td>8</td>
+					<td>Very Good</td>
+					<td>70-79</td>
+				</tr>
+				<tr>
+					<td>B+</td>
+					<td>7</td>
+					<td>Good</td>
+					<td>60-69</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>6</td>
+					<td>Above Average</td>
+					<td>50-59</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>5</td>
+					<td>Average</td>
+					<td>40-49</td>
+				</tr>
+				<tr>
+					<td>P</td>
+					<td>4</td>
+					<td>Pass</td>
+					<td>35-39</td>
+				</tr>
+				<tr>
+					<td>F</td>
+					<td>0</td>
+					<td>Fail</td>
+					<td>0-34</td>
+				</tr>
+				<tr>
+					<td>Ab</td>
+					<td>0</td>
+					<td>Absent</td>
+					<td>Absent</td>
+				</tr>
+			</table>
+		</div><!--table ends-->
+		<br />
+		Each grade point is then multiplied by the course credit score of that subject. 
+		<br />
+		<code>For Example - If you scored A+ grade in Applied Mathematics then it is converted to grade points (i.e. 9) which will be multipled with credit score of subject (i.e. 4)</code>
+		<br /><br />
+		After taking summation of all credit points it is divided by total credits in the semester (i.e. 30) which gives the <a href="#/">SGPA</a>.
+		<br /><br />
+		To Make this complex and tedious process of SGPA Calculation easier, I have developed this Angular JS App which do all this ugly task for you and gives you SGPA within a minute.<br /><br />
+		I had also developed an anroid app for the same which you can download from this <a href="#">link</a>.
+		<br /><br />
+		<small>For further details on CBCS System and CGPA Calculation read  <a href="http://www.dauniv.ac.in/Ordinance.php">ReRevisedOrdinance 31</a></small>
+	</div>
+</div>
+<style>
+	.panel{
+		font-size: 1.2em;
+	}
+</style>

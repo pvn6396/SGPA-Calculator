@@ -8,6 +8,26 @@ app.config(function($routeProvider){
 		templateUrl: 'views/branch.html',
 	})
 
+	.when('/how', {
+		controller: 'HowController',
+		templateUrl: 'views/how.html',
+	})
+
+	.when('/dis', {
+		controller: 'DisclaimerController',
+		templateUrl: 'views/disclaimer.html',
+	})
+
+	.when('/developer', {
+		controller: 'DevelperController',
+		templateUrl: 'views/developer.html',
+	})
+
+	.when('/faq', {
+		controller: 'FaqController',
+		templateUrl: 'views/faq.html',
+	})
+
 	.when('/calcs', {
 		controller: 'CalCSController',
 		templateUrl: 'views/calcs.html',

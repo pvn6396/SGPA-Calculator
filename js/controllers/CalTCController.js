@@ -3,7 +3,7 @@ app.controller('CalTCController', ['$scope', function($scope){
 	$(".again").hide();
 	$scope.subject=["Applied Mathematics 2","Physics Theory","Physics Practical","ED Theory","ED Practical","Electrical Theory","Electrical Practical","Programming Theory","Programming Practical","Humanities","Comphrensive Viva"];
 	$scope.grade=["10","10","10","10","10","10","10","10","10","10","10"];
-	$scope.weight=["2","2","2","2","2","2","2","2","2","2","2"];
+	$scope.weight=["4","4","1","3","2","4","1","4","1","2","4"];
 
 	$scope.SGPA=0;
 
@@ -67,7 +67,7 @@ app.controller('CalTCController', ['$scope', function($scope){
 	}
 
 	$scope.reset=function(){
-		$scope.grade=["10","10","10","10","10","10","10","10","10","10"];
+		$scope.grade=["10","10","10","10","10","10","10","10","10","10","10"];
 		$(".btn-cal").show();
 		$(".pro-bar").hide();
 	}

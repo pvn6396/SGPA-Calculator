@@ -7,7 +7,6 @@ app.controller('CalTCController', ['$scope', function($scope){
 
 	$scope.SGPA=0;
 
-	$scope.progressbartext="Hai"
 
 	$scope.cal=function(){
 
@@ -17,7 +16,7 @@ app.controller('CalTCController', ['$scope', function($scope){
 		$scope.hasBack=false;
 		$scope.backSubName=""
 
-		for(i=0;i<10;i++){
+		for(i=0;i<11;i++){
 			if($scope.grade[i]==0)
 			{
 				$scope.hasBack=true;
@@ -27,7 +26,6 @@ app.controller('CalTCController', ['$scope', function($scope){
 		}
 
 		$scope.SGPA=$scope.total/(30);
-
 		$scope.SGPA=Math.round($scope.SGPA*10)/10;
 		$scope.wid=$scope.SGPA*10;
 		$scope.animate($scope.wid.toString()+"%");
@@ -41,7 +39,7 @@ app.controller('CalTCController', ['$scope', function($scope){
 		   duration: 5000,// It controls the time duration
 		   complete:function(){
 		   		$(".progress-bar").text($scope.SGPA +" CGPA")
-		   		$(".again").toggle(2000);
+		   		$(".again").show(2000);
 		   	},
 		   	/* It Changes Color of strip */
 		   step: function( now, fx ) {

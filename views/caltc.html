@@ -5,7 +5,7 @@
 
 	<!-- Sub 0 -->
 	<div class="form-group" ng-repeat="x in subject track by $index" ng-init="ids=id[$index]">
-	    <label class="control-label col-xs-6 pull-left" for="type">{{x}} : {{weight[$index]}} {{grade[$index]}}</label>
+	    <label class="control-label col-xs-6 pull-left" for="type">{{x}} : </label>
 	    <div class="col-xs-4">
 	    	<select id="type" class="form-control" ng-model="grade[$index]" >
 	    		<option value="10" selected>O</option>

@@ -52,3 +52,11 @@ app.config(function($routeProvider){
 	});
 });
 
+// Create the factory that share the Fact
+app.factory('data', function(){
+  return { 
+  	SGPA: '',
+  	backSubName:'',
+  };
+
+});

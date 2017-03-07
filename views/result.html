@@ -1,1 +1,51 @@
-<h1>Result</h1>
+<h1 class="head">Your CGPA</h1>
+
+<div class="pro-bar">
+
+	<div id="marks" style="font-size: 46px; padding:20px;" class="text-danger"></div>
+
+	<div class="col-xs-12 col-sm-12 progress-container pro-bar">
+	    <div class="progress progress-striped active">
+	        <div class="progress-bar progress-bar-success" style="width:0%"></div>
+	    </div>
+	</div>
+
+	<br />
+	<br />
+	<div class="alert alert-danger alert-dismissible" role="alert" ng-if="hasBack" >
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<strong>Warning!</strong> You Have Back in {{backSubName}}.
+	</div>
+	<button class="btn btn-lg btn-warning again" ng-click="back()">Calculate Again</button>
+</div>
+
+
+
+<style>
+.progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+/* blink */
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+/*text color */
+.text-danger{
+	color:#dc2430!important;
+}
+.text-warning{
+	color:#fcb502!important;
+}
+.text-info{
+	color:#02bcf9 !important;
+}
+.text-success{
+	color:#50f469!important;
+}
+</style>

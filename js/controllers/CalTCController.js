@@ -13,7 +13,7 @@ app.controller('CalTCController', ['$scope', 'data','$window',function($scope,da
 		$scope.hasBack=false;
 		data.backSubName=""
 
-		for(i=0;i<10;i++){
+		for(i=0;i<11;i++){
 			if($scope.grade[i]==0)
 			{
 				$scope.hasBack=true;

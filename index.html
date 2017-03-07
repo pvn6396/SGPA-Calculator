@@ -10,7 +10,8 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-theme.css" />
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-
+		<<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	 	<!-- AngularJS and ng-Route -->
 
 	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
@@ -54,7 +55,15 @@
 				color:#fff!important;
 				font-size:30px !important;
 			}
-
+			.loading{
+				text-align:center;
+				width:100%;
+				padding-top:30px;
+				color:#fff;
+				/*font-family: 'Pacifico';*/
+				font-family: 'Indie Flower', cursive;
+				font-size:70px !important;
+			}
 		</style>
   	</head>
 
@@ -86,9 +95,10 @@
 		 	</div>
 		</nav>
 		<!--navbar ends -->
+	
 
 		<!-- Main Window -->
-		<div class="container-fluid" style="margin-bottom:25px">
+		<div class="container-fluid main" style="margin-bottom:25px">
 			<div class="row text-center">
 				<div class="col-md-3"></div>
 				<div class="col-xs-12 col-md-6 bg-white view">
@@ -99,6 +109,8 @@
 			</div>
 		 	
 		</div><!-- container ends-->
+		<!-- Load Window-->
+		<div class="loading"><span>SGPA Calculator</span></div>
 		<div class="footer">
 			Developed by Mohit Khandelwal
 		</div>
@@ -122,7 +134,11 @@
 
   		<!-- custom logout function -->
   		<script>
-
+  			$('.main').hide();
+  			setTimeout(function(){
+			   $('.loading').fadeOut(2000,function(){$('.main').fadeIn(2000)});
+			   // or fade, css display however you'd like.
+			}, 500);
   		</script> 
        	
 	</body>
